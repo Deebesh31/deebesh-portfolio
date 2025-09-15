@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">ADK</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#co-curricular">Co-curricular</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+       <div class="logo">Deebesh</div>
+       <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span> 
+            <span></span> 
+            <span></span> 
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#co-curricular" onclick="toggleMenu()">Co-curricular</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+       </div> 
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Deebesh profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Deebesh</h1>
+            <p class="section__text__p2">Aspring Software Engineer</p>
+            <div class="btn-container">
+                <button
+                type="button" 
+                 class="btn btn-color-2"
+                  onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+
+                  <button
+                  type="button" 
+                 class="btn btn-color-1"
+                  onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/deebesh-araburdoo-8828b729b/'">
+
+                <img src="./assets/facebook.png" alt="My facebook profile" 
+                class="icon" onclick="location.href='https://www.facebook.com/deebesh.araburdoo/'">
+
+                <img src="./assets/instagram.png" alt="My instagram profile" 
+                class="icon" onclick="location.href='https://www.instagram.com/a.deebesh?igsh=MTJlaHhiNWFhZzhwYQ%3D%3D&utm_source=qr'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <p class="title">About Me</p>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Interests</h3>
+                        <p>Project Management <br>Full-Stack Development <br>Artificial Intelligence</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor in Software Engineering (Hons)<br>Sunway University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>My name is Deebesh and I am 22 years old. I did not come from an IT background during my
+                         O-Levels or A-Levels, but my fascination with technology began when I built an Arduino-based
+                          automated scarecrow for my Design and Technology project. Watching how lines of code could
+                           bring hardware to life was eye-opening and sparked my passion for software engineering.
+                            Since then, I have been eager to explore the world of IT where the possibilities are endless. </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML, CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Project Management</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Soft Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Adaptability</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Teamwork</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Excellent Communication</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Fluent in 3 Languages</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Problem-solving</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Leadership</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Logo.png" alt="Project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">StudiEats</h2>
+                <div class="tech-stack">
+                    <img src="./assets/scala.png" alt="Scala" class="tech-icon" title="Scala">
+                    <img src="./assets/css.png" alt="Scala" class="tech-icon" title="Css">
+                    <img src="./assets/sql.png" alt="Scala" class="tech-icon" title="Sql">
+                </div>
+                <p class="project-details">A desktop GUI application built for my PRG2104 assignment with Scala and ScalaFX that provides affordable meal delivery services for university students. Features include subscription-based meal plans, real-time order tracking, secure payment processing, and comprehensive admin dashboard for user and menu management. Designed to address food security challenges and promote healthy eating habits among students.</p>
+                <div class="btn-container">  
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/iNpaWGCcpvc'">YouTube</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Algorithm Showcase</h2>
+                <div class="tech-stack">
+                    <img src="./assets/python.png" alt="Python" class="tech-icon" title="Python">
+                </div>
+                <p class="project-details">A comprehensive suite of implementations demonstrating core computer science algorithms through interactive, visually engaging applications. Features a complete Binary Search Tree with ASCII visualization, a gamified Dijkstra's pathfinding adventure as a pirate treasure hunt, and an intelligent Sudoku generator/solver using backtracking with multiple difficulty levels.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Deebesh31/Python_Data_Structure.git'">Github</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/pokemon.jpg" alt="Project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Pokémon Ga-Olé</h2>
+                <div class="tech-stack">
+                    <img src="./assets/java.png" alt="Java" class="tech-icon" title="Java">
+                </div>
+                <p class="project-details">A comprehensive Pokemon battle simulation game implementing object-oriented programming concepts. Features turn-based combat system, multiple Pokemon types with unique abilities, evolution mechanics, and strategic gameplay elements. Built with Java Swing for an engaging desktop gaming experience.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View More Projects Section -->
+    <div class="view-more-container">
+        <button class="view-more-btn" onclick="toggleMoreProjects()">
+            <span id="view-more-text">View More Projects</span>
+            <span class="arrow-down" id="dropdown-arrow">▼</span>
+        </button>
+        
+        <div class="more-projects" id="more-projects" style="display: none;">
+            <div class="about-containers">
+                <!-- Additional Project 1 -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/SVPS.png" alt="SVPS" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">SVPS</h2>
+                    <div class="tech-stack">
+                        <img src="./assets/figma.png" alt="Figma" class="tech-icon" title="Figma">
+                    </div>
+                    <p class="project-details">This was an assignment for my SEG2202 module. It is a Smart Vehicle Performance System (SVPS)
+                         and the assignment required us to design a mobile application as well as an in-car-display interface for optimal user experience. </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/proto/tI4CVzTJcjT5FX72eL4Y3l/SEG-2202--SVPS?node-id=0-1&t=phmuZ5FU0hOH79KO-1'">Phone App</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/proto/tI4CVzTJcjT5FX72eL4Y3l/SEG-2202--SVPS?node-id=56-281&t=phmuZ5FU0hOH79KO-1'">Car Display</button>
+                    </div>
+                </div>
+
+                <!-- Additional Project 2 -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-placeholder.png" alt="Database Project" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">University Database System</h2>
+                    <div class="tech-stack">
+                        <img src="./assets/sql.png" alt="SQL" class="tech-icon" title="SQL">
+                        <img src="./assets/python.png" alt="Python" class="tech-icon" title="Python">
+                    </div>
+                    <p class="project-details">A comprehensive database management system for university operations including student enrollment, course management, and grade tracking. Implemented with optimized SQL queries and Python backend.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github</button>
+                    </div>
+                </div>
+
+                <!-- Additional Project 3 -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-placeholder.png" alt="Mobile App" class="project-img"/>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Task Manager App</h2>
+                    <div class="tech-stack">
+                        <img src="./assets/react.png" alt="React" class="tech-icon" title="React Native">
+                    </div>
+                    <p class="project-details">A cross-platform mobile application for task and project management. Features include real-time collaboration, deadline tracking, and productivity analytics with intuitive user interface design.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#co-curricular'"/>
+</section>
+
+<section id="co-curricular">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Co-curricular Activities</h1>
+    
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="./assets/pokemon.jpg" alt="Student Leadership Program">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-category">Leadership</div>
+                    <h2 class="slide-title">Student Council President</h2>
+                    <p class="slide-description">Led a team of 15 student representatives to organize university-wide events and advocate for student rights. Successfully implemented new campus policies that improved student experience and organized the annual cultural festival attended by over 2000 students. This role taught me valuable leadership skills, conflict resolution, and how to work with diverse groups of people.</p>
+                </div>  
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="./assets/activity2.jpg" alt="Programming Competition">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-category">Competition</div>
+                    <h2 class="slide-title">Programming Competition Winner</h2>
+                    <p class="slide-description">Secured 1st place in the Inter-University Programming Championship, competing against teams from 12 universities. The competition involved solving complex algorithmic problems under time pressure. Our team developed an innovative solution for the final challenge using dynamic programming techniques, which impressed the judges and earned us the top spot.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="./assets/activity3.jpg" alt="Community Service">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-category">Community Service</div>
+                    <h2 class="slide-title">Tech Education Volunteer</h2>
+                    <p class="slide-description">Volunteered with local NGO to teach basic computer skills and programming fundamentals to underprivileged children. Over 6 months, I helped 50+ children learn essential digital literacy skills. This experience was incredibly rewarding and reinforced my passion for technology education and giving back to the community.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <div class="slide-content">
+                <div class="slide-image">
+                    <img src="./assets/activity4.jpg" alt="Hackathon Team">
+                </div>
+                <div class="slide-text">
+                    <div class="slide-category">Innovation</div>
+                    <h2 class="slide-title">Hackathon Team Lead</h2>
+                    <p class="slide-description">Led a cross-functional team of 4 developers in a 48-hour hackathon focused on sustainable technology solutions. We developed an AI-powered app that helps users reduce food waste by suggesting recipes based on ingredients nearing expiration. Our solution won the "Best Social Impact" award and received interest from potential investors.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <!-- Dots indicators -->
+    <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+</section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:dkaraburdoo@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/deebesh-araburdoo-8828b729b/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/facebook.png" alt="facebook icon" class="icon contact-icon"/>
+                <p><a href="https://www.facebook.com/deebesh.araburdoo/">Facebook</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/instagram.png" alt="instagram icon" class="icon contact-icon"/>
+                <p><a href="https://www.instagram.com/a.deebesh?igsh=MTJlaHhiNWFhZzhwYQ%3D%3D&utm_source=qr">Instagram</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169;2025 Deebesh Kant Araburdoo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
