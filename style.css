@@ -92,24 +92,38 @@ a:hover {
 }
 
 .menu-links {
-    position: absolute;
+     position: absolute;
     top: 100%;
     right: 0;
     background-color: white;
     width: fit-content;
+    min-width: 200px; /* Ensure minimum width */
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* Add these properties for better mobile handling */
+    z-index: 1000;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu-links a {
     display: block;
-    padding: 10px;
+    padding: 15px 20px; /* Increased padding for better touch targets */
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Slightly smaller for mobile */
     color: black;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add subtle separators */
+}
+
+.menu-links a:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.menu-links a:hover {
+    background-color: rgba(53, 53, 53, 0.1);
 }
 
 .menu-links li {
@@ -117,9 +131,10 @@ a:hover {
 }
 
 .menu-links.open {
-    max-height: 300px;
+    max-height: 350px; /* Increased max-height to accommodate all menu items */
 }
 
+/* Hamburger icon animation states */
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
@@ -136,11 +151,11 @@ a:hover {
     transform: none;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:nth-child(2) {
     opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:last-child {
     transform: none;
 }
 
@@ -309,44 +324,107 @@ section {
     margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
 
-#experience {
-    position: relative;
-} 
-
-.experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-}
-
-.experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-}
-
-article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-}
-
-article .icon {
-    cursor: default;
-}
+        /* Skills Section Styling */
+        #experience {
+            position: relative;
+            padding-top: 4vh;
+            height: auto;
+            min-height: 96vh;
+            margin: 0 10rem;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        
+        .section__text__p1 {
+            text-align: center;
+            color: rgb(85, 85, 85);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: rgb(53, 53, 53);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+            padding: 0 1rem;
+        }
+        
+        .skill-category {
+            background: white;
+            border-radius: 2rem;
+            padding: 2rem;
+            border: rgb(163, 163, 163) 0.1rem solid;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            color: rgb(53, 53, 53);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .skill-tag {
+            background: rgb(250, 250, 250);
+            border: rgb(163, 163, 163) 0.1rem solid;
+            border-radius: 25px;
+            padding: 0.7rem 1.3rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgb(53, 53, 53);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .skill-tag:hover {
+            background: rgb(53, 53, 53);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(53, 53, 53, 0.3);
+        }
+        
+        /* Arrow styling */
+        .arrow {
+            position: absolute;
+            right: -5rem;
+            bottom: 2.5rem;
+            cursor: pointer;
+        }
+        
+        .icon {
+            height: 2rem;
+            cursor: pointer;
+        }
+        
 
 /* PROJECTS */
 
@@ -406,6 +484,29 @@ article .icon {
     width: 30px;
     height: 30px;
     object-fit: contain;
+}
+
+/* PROJECTS SECTION FIX */
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* Add flex-wrap to allow items to wrap to next row */
+    flex-wrap: wrap;
+    /* Ensure proper justification */
+    justify-content: center;
+}
+
+.details-container {
+    padding: 1.5rem;
+    /* Change from flex: 1 to fixed width for consistent sizing */
+    flex: 0 1 calc(33.333% - 1.5rem); /* 3 items per row with gap */
+    min-width: 300px; /* Minimum width to prevent overcrowding */
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
 }
 
 
@@ -470,21 +571,6 @@ article .icon {
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
-        }
-
- /* Responsive adjustments */
-        @media screen and (max-width: 768px) {
-            .pagination-container {
-                gap: 0.5rem;
-                margin: 2rem 0;
-            }
-            
-            .pagination-btn {
-                padding: 0.6rem 1rem;
-                font-size: 0.9rem;
-                min-width: 40px;
-                height: 40px;
-            }
         }
 
 
@@ -620,28 +706,6 @@ article .icon {
 .dot.active, .dot:hover {
     background-color: rgb(53, 53, 53);
     transform: scale(1.2);
-}
-
-/* Responsive for slideshow */
-@media screen and (max-width: 768px) {
-    .slide-content {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-        gap: 2rem;
-    }
-
-    .slide-image {
-        max-width: 80%;
-    }
-
-    .slide-text {
-        padding-left: 0;
-    }
-
-    .slide-title {
-        font-size: 1.5rem;
-    }
 }
 
 /* CONTACT */
