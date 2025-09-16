@@ -5,52 +5,64 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-  let currentPage = 1;
-        const totalPages = 2;
+let currentPage = 1;
+const totalPages = 2;
 
-        function showPage(pageNumber) {
-            // Hide all project grids
-            for (let i = 1; i <= totalPages; i++) {
-                const page = document.getElementById(`projects-page-${i}`);
-                const pageBtn = document.getElementById(`page-${i}`);
-                
-                if (i === pageNumber) {
-                    page.classList.add('active');
-                    pageBtn.classList.add('active');
-                } else {
-                    page.classList.remove('active');
-                    pageBtn.classList.remove('active');
-                }
-            }
-
-            // Update navigation buttons
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-            
-            prevBtn.disabled = pageNumber === 1;
-            nextBtn.disabled = pageNumber === totalPages;
-            
-            currentPage = pageNumber;
-        }
-
-        function goToPage(pageNumber) {
-            if (pageNumber >= 1 && pageNumber <= totalPages) {
-                showPage(pageNumber);
-            }
-        }
-
-        function changePage(direction) {
-            const newPage = currentPage + direction;
-            if (newPage >= 1 && newPage <= totalPages) {
-                showPage(newPage);
-            }
-        }
-
-        // Initialize first page
-        document.addEventListener('DOMContentLoaded', function() {
-            showPage(1);
+function scrollToProjects() {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+        projectsSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
         });
+    }
+}
 
+function showPage(pageNumber) {
+    // Hide all project grids
+    for (let i = 1; i <= totalPages; i++) {
+        const page = document.getElementById(`projects-page-${i}`);
+        const pageBtn = document.getElementById(`page-${i}`);
+                
+        if (i === pageNumber) {
+            page.classList.add('active');
+            pageBtn.classList.add('active');
+        } else {
+            page.classList.remove('active');
+            pageBtn.classList.remove('active');
+        }
+    }
+    
+    // Update navigation buttons
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+            
+    prevBtn.disabled = pageNumber === 1;
+    nextBtn.disabled = pageNumber === totalPages;
+            
+    currentPage = pageNumber;
+    
+    // Scroll to top of projects section
+    scrollToProjects();
+}
+
+function goToPage(pageNumber) {
+    if (pageNumber >= 1 && pageNumber <= totalPages) {
+        showPage(pageNumber);
+    }
+}
+
+function changePage(direction) {
+    const newPage = currentPage + direction;
+    if (newPage >= 1 && newPage <= totalPages) {
+        showPage(newPage);
+    }
+}
+
+// Initialize first page
+document.addEventListener('DOMContentLoaded', function() {
+    showPage(1);
+});
 
 let slideIndex = 1;
 
