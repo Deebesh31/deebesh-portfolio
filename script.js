@@ -61,5 +61,4 @@ function autoSlide() {
     changeSlide(1);
 }
 
-// Uncomment the line below if you want auto-advancing slides every 5 seconds
 // setInterval(autoSlide, 5000);
