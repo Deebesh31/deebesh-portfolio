@@ -393,58 +393,6 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 
-.view-more-container {
-    text-align: center;
-    margin: 2rem 0 6rem 0;
-}
-
-.view-more-btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 13rem;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    background: none;
-    color: black;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 0 auto;
-    font-size: 1rem;
-}
-
-.view-more-btn:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-    border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.arrow-down {
-    transition: transform 0.3s ease;
-}
-
-.arrow-down.rotated {
-    transform: rotate(180deg);
-}
-
-.more-projects {
-    margin-top: 2rem;
-    animation: slideDown 0.5s ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .tech-stack {
     display: flex;
@@ -459,6 +407,85 @@ article .icon {
     height: 30px;
     object-fit: contain;
 }
+
+
+        /* PAGINATION STYLES */
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 0;
+            gap: 1rem;
+        }
+
+        .pagination-btn {
+            padding: 0.8rem 1.2rem;
+            border: 1px solid rgb(163, 163, 163);
+            background: white;
+            color: rgb(85, 85, 85);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            min-width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pagination-btn:hover {
+            background: rgb(53, 53, 53);
+            color: white;
+            border-color: rgb(53, 53, 53);
+        }
+
+        .pagination-btn.active {
+            background: rgb(25, 118, 210);
+            color: white;
+            border-color: rgb(25, 118, 210);
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .pagination-btn:disabled:hover {
+            background: white;
+            color: rgb(85, 85, 85);
+            border-color: rgb(163, 163, 163);
+        }
+
+        .projects-grid {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .projects-grid.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+ /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .pagination-container {
+                gap: 0.5rem;
+                margin: 2rem 0;
+            }
+            
+            .pagination-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+                min-width: 40px;
+                height: 40px;
+            }
+        }
 
 
 /* CO-CURRICULAR  */

@@ -5,21 +5,52 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-function toggleMoreProjects() {
-    const moreProjects = document.getElementById('more-projects');
-    const arrow = document.getElementById('dropdown-arrow');
-    const text = document.getElementById('view-more-text');
-    
-    if (moreProjects.style.display === 'none' || moreProjects.style.display === '') {
-        moreProjects.style.display = 'block';
-        arrow.classList.add('rotated');
-        text.textContent = 'View Less Projects';
-    } else {
-        moreProjects.style.display = 'none';
-        arrow.classList.remove('rotated');
-        text.textContent = 'View More Projects';
-    }
-}
+  let currentPage = 1;
+        const totalPages = 2;
+
+        function showPage(pageNumber) {
+            // Hide all project grids
+            for (let i = 1; i <= totalPages; i++) {
+                const page = document.getElementById(`projects-page-${i}`);
+                const pageBtn = document.getElementById(`page-${i}`);
+                
+                if (i === pageNumber) {
+                    page.classList.add('active');
+                    pageBtn.classList.add('active');
+                } else {
+                    page.classList.remove('active');
+                    pageBtn.classList.remove('active');
+                }
+            }
+
+            // Update navigation buttons
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            
+            prevBtn.disabled = pageNumber === 1;
+            nextBtn.disabled = pageNumber === totalPages;
+            
+            currentPage = pageNumber;
+        }
+
+        function goToPage(pageNumber) {
+            if (pageNumber >= 1 && pageNumber <= totalPages) {
+                showPage(pageNumber);
+            }
+        }
+
+        function changePage(direction) {
+            const newPage = currentPage + direction;
+            if (newPage >= 1 && newPage <= totalPages) {
+                showPage(newPage);
+            }
+        }
+
+        // Initialize first page
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage(1);
+        });
+
 
 let slideIndex = 1;
 
@@ -61,4 +92,4 @@ function autoSlide() {
     changeSlide(1);
 }
 
-// setInterval(autoSlide, 5000);
+setInterval(autoSlide, 5000);
