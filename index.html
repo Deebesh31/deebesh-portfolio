@@ -17,11 +17,19 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#co-curricular">Co-curricular</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><img
+                    id="modeToggle"
+                    class="icon color-icon"
+                     src="./assets/theme_light.png" 
+                     src-light="./assets/theme_light.png" 
+                     src-dark="./assets/theme_dark.png"
+                     alt="Color theme icon">
+                </li>
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
-       <div class="logo">Deebesh</div>
+       <div class="logo">ADK</div>
        <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span> 
@@ -34,16 +42,25 @@
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#co-curricular" onclick="toggleMenu()">Co-curricular</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><img
+                    id="modeToggle2"
+                    class="icon color-icon"
+                     src="./assets/theme_light.png" 
+                     src-light="./assets/theme_light.png" 
+                     src-dark="./assets/theme_dark.png"
+                     alt="Color theme icon">
+                </li>
         </div>
        </div> 
     </nav>
+
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Deebesh profile picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Deebesh</h1>
+            <h1 class="title">Deebesh Kant Araburdoo</h1>
             <p class="section__text__p2">Aspring Software Engineer</p>
             <div class="btn-container">
                 <button
@@ -57,17 +74,27 @@
                   onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedin profile" 
-                class="icon" onclick="location.href='https://www.linkedin.com/in/deebesh-araburdoo-8828b729b/'">
+                <img src="./assets/linkedin.png"
+                 src-light="./assets/linkedin.png"
+                 src-dark="./assets/linkedin_dark.png"
+                alt="My linkedin profile" 
+                class="icon linkedin-icon" onclick="location.href='https://www.linkedin.com/in/deebesh-araburdoo-8828b729b/'">
 
-                <img src="./assets/facebook.png" alt="My facebook profile" 
-                class="icon" onclick="location.href='https://www.facebook.com/deebesh.araburdoo/'">
+                <img src="./assets/facebook.png"
+                 src-light="./assets/facebook.png"
+                 src-dark="./assets/facebook_dark.png"
+                alt="My facebook profile"
+                class="icon facebook-icon" onclick="location.href='https://www.facebook.com/deebesh.araburdoo/'">
 
-                <img src="./assets/instagram.png" alt="My instagram profile" 
-                class="icon" onclick="location.href='https://www.instagram.com/a.deebesh?igsh=MTJlaHhiNWFhZzhwYQ%3D%3D&utm_source=qr'">
+                <img src="./assets/instagram.png"
+                 src-light="./assets/instagram.png"
+                 src-dark="./assets/instagram_dark.png"
+                alt="My instagram profile" 
+                class="icon instagram-icon" onclick="location.href='https://www.instagram.com/a.deebesh?igsh=MTJlaHhiNWFhZzhwYQ%3D%3D&utm_source=qr'">
             </div>
         </div>
     </section>
+
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <p class="title">About Me</p>
@@ -78,12 +105,22 @@
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <img
+                         src="./assets/experience.png"
+                         src-light="./assets/experience.png"
+                         src-dark="./assets/experience_dark.png"
+                        alt="experience icon"
+                         class="icon">
                         <h3>Interests</h3>
                         <p>Project Management <br>Full-Stack Development <br>Artificial Intelligence</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <img
+                         src="./assets/education.png"
+                         src-light="./assets/education.png"
+                         src-dark="./assets/education_dark.png"
+                        alt="education icon"
+                         class="icon">
                         <h3>Education</h3>
                         <p>Bachelor in Software Engineering (Hons)<br>Sunway University</p>
                     </div>
@@ -102,9 +139,8 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" 
-        onclick="location.href='./#experience'"/>
     </section>
+
         <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Skills</h1>
@@ -168,7 +204,6 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
 
     <section id="projects">
@@ -217,9 +252,15 @@
                         <div class="tech-stack">
                             <img src="./assets/java.png" alt="Java" class="tech-icon" title="Java">
                         </div>
-                        <p class="project-details">A comprehensive Pokemon battle simulation game implementing object-oriented programming concepts. Features turn-based combat system, multiple Pokemon types with unique abilities, evolution mechanics, and strategic gameplay elements. Built with Java Swing for an engaging desktop gaming experience.</p>
+                        <p class="project-details">A Java-based Pokemon capture simulation game developed as a team project,
+                             implementing advanced object-oriented programming principles with proper inheritance, polymorphism,
+                              and modular design. Features a secure user authentication system with CSV-based data persistence,
+                               strategic Pokemon capture mechanics, and an innovative Golden Sand reward system that incentivizes
+                                continued gameplay even after failed attempts. The game demonstrates strong software engineering
+                                 practices through comprehensive UML-driven development, robust exception handling, and collaborative
+                                  team-based development following industry best practices.</p>
                         <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Deebesh31/Pokemon-Ga-Ole.git'">Github</button>
                         </div>
                     </div>
                 </div>
@@ -296,8 +337,6 @@
             <button class="pagination-btn" id="page-2" onclick="goToPage(2)">2</button>
             <button class="pagination-btn" id="next-btn" onclick="changePage(1)">›</button>
         </div>
-
-    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#co-curricular'"/>
 </section>
 
 <section id="co-curricular">
@@ -380,15 +419,12 @@
         <button class="next" onclick="changeSlide(1)">❯</button>
     </div>
 
-    <!-- Dots indicators -->
     <div class="dots-container">
         <span class="dot active" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
     </div>
-
-    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
 </section>
 
     <section id="contact">
@@ -396,19 +432,35 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
+                <img src="./assets/email.png"
+                 src-light="./assets/email.png"
+                 src-dark="./assets/email_dark.png"
+                alt="My email profile" 
+                class="icon email-icon">
                 <p><a href="mailto:dkaraburdoo@gmail.com">Email</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+                <img src="./assets/linkedin.png"
+                 src-light="./assets/linkedin.png"
+                 src-dark="./assets/linkedin_dark.png"
+                alt="My linkedin profile" 
+                class="icon linkedin-icon">
                 <p><a href="https://www.linkedin.com/in/deebesh-araburdoo-8828b729b/">LinkedIn</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/facebook.png" alt="facebook icon" class="icon contact-icon"/>
+                <img src="./assets/facebook.png"
+                 src-light="./assets/facebook.png"
+                 src-dark="./assets/facebook_dark.png"
+                alt="My facebook profile" 
+                class="icon facebook-icon">
                 <p><a href="https://www.facebook.com/deebesh.araburdoo/">Facebook</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/instagram.png" alt="instagram icon" class="icon contact-icon"/>
+                <img src="./assets/instagram.png"
+                 src-light="./assets/instagram.png"
+                 src-dark="./assets/instagram_dark.png"
+                alt="My instagram profile" 
+                class="icon instagram-icon">
                 <p><a href="https://www.instagram.com/a.deebesh?igsh=MTJlaHhiNWFhZzhwYQ%3D%3D&utm_source=qr">Instagram</a></p>
             </div>
         </div>
