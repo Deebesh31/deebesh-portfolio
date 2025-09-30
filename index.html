@@ -265,18 +265,32 @@
                         </div>
                     </div>
                     
-                    <!-- 3rd Project: Algorithm Showcase -->
-                    <div class="details-container color-container">
+                    <!-- 3rd Project: ResuMate -->
+                     <div class="details-container color-container">
                         <div class="article-container">
-                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                            <img src="./assets/ResuMate.png" alt="Project 1" class="project-img"/>
                         </div>
-                        <h2 class="experience-sub-title project-title">Algorithm Showcase</h2>
+                        <h2 class="experience-sub-title project-title">ResuMate</h2>
                         <div class="tech-stack">
-                            <img src="./assets/python.png" alt="Python" class="tech-icon" title="Python">
+                            <img src="./assets/python.png" alt="Scala" class="tech-icon" title="Python">
+                            <img src="./assets/gemini.png" alt="CSS" class="tech-icon" title="Gemini AI">
+                            <img src="./assets/streamlit.png" alt="SQL" class="tech-icon" title="Streamlit">
                         </div>
-                        <p class="project-details">A comprehensive suite of implementations demonstrating core computer science algorithms through interactive, visually engaging applications. Features a complete Binary Search Tree with ASCII visualization, a gamified Dijkstra's pathfinding adventure as a pirate treasure hunt, and an intelligent Sudoku generator/solver using backtracking with multiple difficulty levels.</p>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Deebesh31/Python_Data_Structure.git'">Github</button>
+                        <p class="project-details">I developed a comprehensive AI-powered resume analysis tool using Python
+                             and Streamlit that helps job seekers optimize their resumes for success. The application leverages
+                              Google's Gemini 2.0 AI model to provide intelligent, personalized feedback on resume content,
+                               structure, and effectiveness. Key features include an automated scoring system that evaluates
+                                resumes across multiple dimensions, ATS compatibility checking to ensure resumes pass applicant
+                                 tracking systems, keyword analysis that compares resumes against job descriptions, and AI-generated
+                                  cover letters tailored to specific positions. The tool also includes interview question preparation,
+                                   action verb analysis, achievement quantification suggestions, and historical tracking to compare
+                                    resume versions over time. I implemented PDF parsing with PyPDF2, built an intuitive multi-tab
+                                     interface with real-time analysis, and integrated data visualization using Matplotlib for
+                                      statistics dashboards. The project demonstrates my ability to combine natural language
+                                       processing, API integration, and user-centered design to create a practical tool that
+                                        addresses real-world career development challenges.</p>
+                        <div class="btn-container">  
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Deebesh31/resume-analyzer/tree/master'">Github</button>
                         </div>
                     </div>
                 </div>
@@ -324,7 +338,7 @@
                         </div>
                     </div>
 
-                    <!-- 3rd Project Page 2: University Database System -->
+                    <!-- 3rd Project Page 2: Potfolio -->
                     <div class="details-container color-container">
                         <div class="article-container">
                             <img src="./assets/portfolio.png" alt="Portfolio" class="project-img"/>
@@ -356,11 +370,40 @@
             </div>
         </div>
 
+         <!-- Page 3 Projects -->
+        <div class="projects-grid" id="projects-page-3">
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <!-- 1st Project Page 3: Algorithm Showcase -->
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Algorithm Showcase</h2>
+                        <div class="tech-stack">
+                            <img src="./assets/python.png" alt="Python" class="tech-icon" title="Python">
+                        </div>
+                        <p class="project-details">A comprehensive suite of implementations demonstrating core computer science algorithms through interactive, visually engaging applications. Features a complete Binary Search Tree with ASCII visualization, a gamified Dijkstra's pathfinding adventure as a pirate treasure hunt, and an intelligent Sudoku generator/solver using backtracking with multiple difficulty levels.</p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Deebesh31/Python_Data_Structure.git'">Github</button>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Project Page 3: Add your project here -->
+                   
+
+                    <!-- 3rd Project Page 3: Add your project here -->
+                    
+                </div>
+            </div>
+        </div>
+
         <!-- Pagination -->
-        <div class="pagination-container">
+         <div class="pagination-container">
             <button class="pagination-btn" id="prev-btn" onclick="changePage(-1)">‹</button>
             <button class="pagination-btn active" id="page-1" onclick="goToPage(1)">1</button>
             <button class="pagination-btn" id="page-2" onclick="goToPage(2)">2</button>
+            <button class="pagination-btn" id="page-3" onclick="goToPage(3)">3</button>
             <button class="pagination-btn" id="next-btn" onclick="changePage(1)">›</button>
         </div>
 </section>
