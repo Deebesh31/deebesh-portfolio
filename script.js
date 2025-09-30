@@ -53,7 +53,7 @@ function setLightMode() {
 }
 
 let currentPage = 1;
-const totalPages = 2;
+const totalPages = 3;
 
 function scrollToProjects() {
     const projectsSection = document.getElementById('projects');
