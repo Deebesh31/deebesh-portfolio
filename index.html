@@ -63,7 +63,7 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Deebesh profile picture">
+            <div class="privacy-placeholder profile-placeholder" role="img" aria-label="Profile portrait omitted from the public repository"><span>DA</span></div>
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -81,21 +81,21 @@
                   onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png"
-                 src-light="./assets/linkedin.png"
-                 src-dark="./assets/linkedin_dark.png"
+                <img src="https://cdn.simpleicons.org/linkedin/0A66C2" onerror="this.onerror=null;this.src=document.body.getAttribute('theme')==='dark'?'./assets/linkedin_dark.png':'./assets/linkedin.png'"
+                 src-light="https://cdn.simpleicons.org/linkedin/0A66C2"
+                 src-dark="https://cdn.simpleicons.org/linkedin/0A66C2"
                 alt="My linkedin profile" 
                 class="icon linkedin-icon" onclick="location.href='https://www.linkedin.com/in/deebesh-araburdoo-8828b729b/'">
 
-                <img src="./assets/facebook.png"
-                 src-light="./assets/facebook.png"
-                 src-dark="./assets/facebook_dark.png"
+                <img src="https://cdn.simpleicons.org/facebook/0866FF" onerror="this.onerror=null;this.src=document.body.getAttribute('theme')==='dark'?'./assets/facebook_dark.png':'./assets/facebook.png'"
+                 src-light="https://cdn.simpleicons.org/facebook/0866FF"
+                 src-dark="https://cdn.simpleicons.org/facebook/0866FF"
                 alt="My facebook profile"
                 class="icon facebook-icon" onclick="location.href='https://www.facebook.com/deebesh.araburdoo/'">
 
-                <img src="./assets/instagram.png"
-                 src-light="./assets/instagram.png"
-                 src-dark="./assets/instagram_dark.png"
+                <img src="https://cdn.simpleicons.org/instagram/E4405F" onerror="this.onerror=null;this.src=document.body.getAttribute('theme')==='dark'?'./assets/instagram_dark.png':'./assets/instagram.png'"
+                 src-light="https://cdn.simpleicons.org/instagram/E4405F"
+                 src-dark="https://cdn.simpleicons.org/instagram/E4405F"
                 alt="My instagram profile" 
                 class="icon instagram-icon" onclick="location.href='https://www.instagram.com/a.deebesh?igsh=MTJlaHhiNWFhZzhwYQ%3D%3D&utm_source=qr'">
             </div>
@@ -107,7 +107,7 @@
         <p class="title">About Me</p>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/about-pic.jpg" alt="profile picture" class="about-pic">
+                <div class="privacy-placeholder about-placeholder" role="img" aria-label="Personal photo omitted from the public repository"><span>&lt;/&gt;</span></div>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
@@ -228,11 +228,11 @@
                         </div>
                         <h2 class="experience-sub-title project-title">GoalPost Gazette</h2>
                         <div class="tech-stack">
-                            <img src="./assets/mongodb.png" alt="MongoDB" class="tech-icon" title="MongoDB">
-                            <img src="./assets/nodejs.png" alt="NodeJS" class="tech-icon" title="NodeJS">
-                            <img src="./assets/html.png" alt="HTML" class="tech-icon" title="HTML">
-                            <img src="./assets/css.png" alt="CSS" class="tech-icon" title="CSS">
-                            <img src="./assets/expressjs.png" alt="ExpressJS" class="tech-icon" title="ExpressJS">
+                            <img src="https://cdn.simpleicons.org/mongodb/47A248" onerror="this.onerror=null;this.src='./assets/mongodb.png'" alt="MongoDB" class="tech-icon" title="MongoDB">
+                            <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" onerror="this.onerror=null;this.src='./assets/nodejs.png'" alt="Node.js" class="tech-icon" title="Node.js">
+                            <img src="https://cdn.simpleicons.org/html5/E34F26" onerror="this.onerror=null;this.src='./assets/html.png'" alt="HTML" class="tech-icon" title="HTML">
+                            <img src="https://cdn.simpleicons.org/css3/1572B6" onerror="this.onerror=null;this.src='./assets/css.png'" alt="CSS" class="tech-icon" title="CSS">
+                            <img src="https://cdn.simpleicons.org/express/6B7280" onerror="this.onerror=null;this.src='./assets/expressjs.png'" alt="Express" class="tech-icon" title="Express">
                         </div>
                         <p class="project-details">I created a full-stack blog using Node.js, Express, and MongoDB, featuring
                              admin authentication for secure content management. I built this project around my passion for
@@ -255,9 +255,9 @@
                         </div>
                         <h2 class="experience-sub-title project-title">StudiEats</h2>
                         <div class="tech-stack">
-                            <img src="./assets/scala.png" alt="Scala" class="tech-icon" title="Scala">
-                            <img src="./assets/css.png" alt="CSS" class="tech-icon" title="CSS">
-                            <img src="./assets/sql.png" alt="SQL" class="tech-icon" title="SQL">
+                            <img src="https://cdn.simpleicons.org/scala/DC322F" onerror="this.onerror=null;this.src='./assets/scala.png'" alt="Scala" class="tech-icon" title="Scala">
+                            <img src="https://cdn.simpleicons.org/css3/1572B6" onerror="this.onerror=null;this.src='./assets/css.png'" alt="CSS" class="tech-icon" title="CSS">
+                            <img src="./assets/database.svg" alt="SQL database" class="tech-icon" title="SQL">
                         </div>
                         <p class="project-details">A desktop GUI application built for my PRG2104 assignment with Scala and ScalaFX that provides affordable meal delivery services for university students. Features include subscription-based meal plans, real-time order tracking, secure payment processing, and comprehensive admin dashboard for user and menu management. Designed to address food security challenges and promote healthy eating habits among students.</p>
                         <div class="btn-container">  
@@ -272,9 +272,9 @@
                         </div>
                         <h2 class="experience-sub-title project-title">ResuMate</h2>
                         <div class="tech-stack">
-                            <img src="./assets/python.png" alt="Scala" class="tech-icon" title="Python">
-                            <img src="./assets/gemini.png" alt="CSS" class="tech-icon" title="Gemini AI">
-                            <img src="./assets/streamlit.png" alt="SQL" class="tech-icon" title="Streamlit">
+                            <img src="https://cdn.simpleicons.org/python/3776AB" onerror="this.onerror=null;this.src='./assets/python.png'" alt="Python" class="tech-icon" title="Python">
+                            <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" onerror="this.onerror=null;this.src='./assets/gemini.png'" alt="Google Gemini" class="tech-icon" title="Google Gemini">
+                            <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" onerror="this.onerror=null;this.src='./assets/streamlit.png'" alt="Streamlit" class="tech-icon" title="Streamlit">
                         </div>
                         <p class="project-details">I developed a comprehensive AI-powered resume analysis tool using Python
                              and Streamlit that helps job seekers optimize their resumes for success. The application leverages
@@ -308,7 +308,7 @@
                         </div>
                         <h2 class="experience-sub-title project-title">Pokémon Ga-Olé</h2>
                         <div class="tech-stack">
-                            <img src="./assets/java.png" alt="Java" class="tech-icon" title="Java">
+                            <img src="https://cdn.simpleicons.org/openjdk/437291" onerror="this.onerror=null;this.src='./assets/java.png'" alt="Java" class="tech-icon" title="Java">
                         </div>
                         <p class="project-details">A Java-based Pokemon capture simulation game developed as a team project,
                              implementing advanced object-oriented programming principles with proper inheritance, polymorphism,
@@ -329,7 +329,7 @@
                         </div>
                         <h2 class="experience-sub-title project-title">SVPS</h2>
                         <div class="tech-stack">
-                            <img src="./assets/figma.png" alt="Figma" class="tech-icon" title="Figma">
+                            <img src="https://cdn.simpleicons.org/figma/F24E1E" onerror="this.onerror=null;this.src='./assets/figma.png'" alt="Figma" class="tech-icon" title="Figma">
                         </div>
                         <p class="project-details">This was an assignment for my SEG2202 module. It is a Smart Vehicle Performance System (SVPS) and the assignment required us to design a mobile application as well as an in-car-display interface for optimal user experience.</p>
                         <div class="btn-container">
@@ -345,9 +345,9 @@
                         </div>
                         <h2 class="experience-sub-title project-title">My Portfolio</h2>
                         <div class="tech-stack">
-                            <img src="./assets/html.png" alt="HTML" class="tech-icon" title="HTML">
-                            <img src="./assets/css.png" alt="CSS" class="tech-icon" title="CSS">
-                            <img src="./assets/javascript.png" alt="Javascript" class="tech-icon" title="Javascript">
+                            <img src="https://cdn.simpleicons.org/html5/E34F26" onerror="this.onerror=null;this.src='./assets/html.png'" alt="HTML" class="tech-icon" title="HTML">
+                            <img src="https://cdn.simpleicons.org/css3/1572B6" onerror="this.onerror=null;this.src='./assets/css.png'" alt="CSS" class="tech-icon" title="CSS">
+                            <img src="https://cdn.simpleicons.org/javascript/323330" onerror="this.onerror=null;this.src='./assets/javascript.png'" alt="Javascript" class="tech-icon" title="Javascript">
                         </div>
                         <p class="project-details">I created a responsive portfolio website using vanilla HTML, CSS,
                              and JavaScript to showcase my development journey and technical skills. Building this became
@@ -381,7 +381,7 @@
                         </div>
                         <h2 class="experience-sub-title project-title">Algorithm Showcase</h2>
                         <div class="tech-stack">
-                            <img src="./assets/python.png" alt="Python" class="tech-icon" title="Python">
+                            <img src="https://cdn.simpleicons.org/python/3776AB" onerror="this.onerror=null;this.src='./assets/python.png'" alt="Python" class="tech-icon" title="Python">
                         </div>
                         <p class="project-details">A comprehensive suite of implementations demonstrating core computer science algorithms through interactive, visually engaging applications. Features a complete Binary Search Tree with ASCII visualization, a gamified Dijkstra's pathfinding adventure as a pirate treasure hunt, and an intelligent Sudoku generator/solver using backtracking with multiple difficulty levels.</p>
                         <div class="btn-container">
@@ -416,9 +416,7 @@
         <!-- Slide 1 -->
         <div class="slide active">
             <div class="slide-content">
-                <div class="slide-image">
-                    <img src="./assets/extra1.jpg" alt="fire entinguishers">
-                </div>
+                <div class="slide-image activity-illustration safety-illustration" aria-hidden="true"><span>&#x1F525;</span></div>
                 <div class="slide-text">
                     <div class="slide-category">SDG 11: Sustainable Cities and Communities</div>
                     <h2 class="slide-title">Community Safety Volunteering</h2>
@@ -434,9 +432,7 @@
         <!-- Slide 2 -->
         <div class="slide">
             <div class="slide-content">
-                <div class="slide-image">
-                    <img src="./assets/extra2.jpg" alt="food donation">
-                </div>
+                <div class="slide-image activity-illustration donation-illustration" aria-hidden="true"><span>&#x1F4E6;</span></div>
                 <div class="slide-text">
                     <div class="slide-category">SDG 2: Zero Hunger</div>
                     <h2 class="slide-title">Food Donation Drive Volunteer</h2>
@@ -451,9 +447,7 @@
         <!-- Slide 3 -->
         <div class="slide">
             <div class="slide-content">
-                <div class="slide-image">
-                    <img src="./assets/extra3.jpg" alt="cleaning drive">
-                </div>
+                <div class="slide-image activity-illustration ecology-illustration" aria-hidden="true"><span>&#x1F33F;</span></div>
                 <div class="slide-text">
                     <div class="slide-category">SDG 11: Sustainable Cities and Communities & SDG 15: Life on Land</div>
                     <h2 class="slide-title">Cleaning drive as President of Ecology Club</h2>
@@ -469,9 +463,7 @@
         <!-- Slide 4 -->
         <div class="slide">
             <div class="slide-content">
-                <div class="slide-image">
-                    <img src="./assets/extra4.jpg" alt="football">
-                </div>
+                <div class="slide-image activity-illustration football-illustration" aria-hidden="true"><span>&#x26BD;</span></div>
                 <div class="slide-text">
                     <div class="slide-category">SDG 3: Good Health and Well-being</div>
                     <h2 class="slide-title">Football Enthusiast / Player</h2>
@@ -509,25 +501,25 @@
                 <p><a href="mailto:dkaraburdoo@gmail.com">Email</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png"
-                 src-light="./assets/linkedin.png"
-                 src-dark="./assets/linkedin_dark.png"
+                <img src="https://cdn.simpleicons.org/linkedin/0A66C2" onerror="this.onerror=null;this.src=document.body.getAttribute('theme')==='dark'?'./assets/linkedin_dark.png':'./assets/linkedin.png'"
+                 src-light="https://cdn.simpleicons.org/linkedin/0A66C2"
+                 src-dark="https://cdn.simpleicons.org/linkedin/0A66C2"
                 alt="My linkedin profile" 
                 class="icon linkedin-icon">
                 <p><a href="https://www.linkedin.com/in/deebesh-araburdoo-8828b729b/">LinkedIn</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/facebook.png"
-                 src-light="./assets/facebook.png"
-                 src-dark="./assets/facebook_dark.png"
+                <img src="https://cdn.simpleicons.org/facebook/0866FF" onerror="this.onerror=null;this.src=document.body.getAttribute('theme')==='dark'?'./assets/facebook_dark.png':'./assets/facebook.png'"
+                 src-light="https://cdn.simpleicons.org/facebook/0866FF"
+                 src-dark="https://cdn.simpleicons.org/facebook/0866FF"
                 alt="My facebook profile" 
                 class="icon facebook-icon">
                 <p><a href="https://www.facebook.com/deebesh.araburdoo/">Facebook</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/instagram.png"
-                 src-light="./assets/instagram.png"
-                 src-dark="./assets/instagram_dark.png"
+                <img src="https://cdn.simpleicons.org/instagram/E4405F" onerror="this.onerror=null;this.src=document.body.getAttribute('theme')==='dark'?'./assets/instagram_dark.png':'./assets/instagram.png'"
+                 src-light="https://cdn.simpleicons.org/instagram/E4405F"
+                 src-dark="https://cdn.simpleicons.org/instagram/E4405F"
                 alt="My instagram profile" 
                 class="icon instagram-icon">
                 <p><a href="https://www.instagram.com/a.deebesh?igsh=MTJlaHhiNWFhZzhwYQ%3D%3D&utm_source=qr">Instagram</a></p>

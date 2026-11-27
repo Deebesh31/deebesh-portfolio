@@ -1,0 +1,8 @@
+# Personal photos: retain locally, exclude from the public repository.
+/assets/profile-pic.png
+/assets/about-pic.jpg
+/assets/extra1.jpg
+/assets/extra2.jpg
+/assets/extra3.jpg
+/assets/extra4.jpg
+/assets/originals/
