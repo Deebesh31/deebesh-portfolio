@@ -56,7 +56,7 @@ document.addEventListener("keydown", (event) => {
 
 const mapProjects = {
   resumate: { name: "ResuMate", tech: ["Python", "Flask", "Auth0", "Affinda", "OpenAI"], target: "project-resumate" },
-  goalpost: { name: "GoalPost Gazette", tech: ["Node.js", "Express", "MongoDB", "HTML", "CSS"], target: "project-goalpost" },
+  goalpost: { name: "GoalPost Gazette", tech: ["Node.js", "Express", "PostgreSQL", "Supabase", "JavaScript"], target: "project-goalpost" },
   sunplate: { name: "SunPlate", tech: ["React Native", "Expo Router", "TypeScript", "Supabase", "Stripe"], target: "project-sunplate" },
   studieats: { name: "StudiEats", tech: ["Scala", "ScalaFX", "SQL"], target: "project-studieats" },
   pokemon: { name: "Pokémon Ga-Olé", tech: ["Java"], target: "project-pokemon" },
